@@ -1,0 +1,20 @@
+/**
+ * webkit内核下特有样式
+ */
+body{
+  //触发点击事件时，响应的背景框的颜色。
+  -webkit-tap-highlight-color: rgba(250,245,236,0.3);
+  // 设置字体抗锯齿
+  -webkit-font-smoothing:antialiased;
+}
+
+//禁用 html 文本框在 webkit 下拖拽输入
+body{-webkit-user-drag: none;}
+//网页字体缩放，如果属性为none，那么就不会有最小12px的限制。
+body{-webkit-text-size-adjust: 100%;}
+//不按照按照本地默认样式显示元素外观
+input[type=button],input[type=submit],input[type=search]{-webkit-appearance:none;outline:none; }
+//伪类
+//选中之后调整背景和字体
+//::selection             { background:#FFF; color:#333; }
+

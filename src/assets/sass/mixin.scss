@@ -1,0 +1,159 @@
+
+[v-cloak] {display:none;}
+
+//wrapper
+%Wrap1200{margin: 0 auto;width: 1200px;}
+%WrapMin1200{margin: 0 auto;min-width: 1200px;}
+
+
+@mixin HoverColor($blue:$color-blue){
+  &:hover{color:$blue}
+}
+
+/* font */
+@mixin Fw($bold:bold){font-weight:$bold;}//字体加粗
+@mixin Tac($center:center){text-align:$center;}//文本居中
+
+//文章大标题.46rem
+//文章小标题.42rem
+//时间.28rem
+//正文.36rem
+//line-height:1.5rem;
+//margin:.6rem 0;
+@mixin Fs($size: 14px){font-size:$size;}
+
+/* position 定位 */
+//默认相对定位
+@mixin Pr($position:relative){position: $position;}
+
+/* display */
+//默认块级显示
+@mixin Display($block:block){
+  display:$block;
+}
+
+/* img */
+//屏幕宽大于img的时候，img居中显示
+@mixin DImg(){
+  display: block;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* float */
+//默认左浮动
+@mixin Float($float:left) {
+  float: $float;
+}
+
+/* blank */
+//默认10px
+@mixin Blank($height:.2rem){clear: both; height: $height; overflow: hidden; }
+
+/*圆角*/
+//默认5px
+@mixin BRadius($br:10%){
+  border-radius: $br;
+}
+
+@mixin Ofh($ofh:hidden){
+  overflow: $ofh;
+}
+
+/*
+  字间距
+  letter-spacing添加字母之间的空白，而word-spacing添加每个单词之间的空白。
+  注：word-spacing对中文无效。
+ */
+@mixin WordSpace($space:normal){
+    word-spacing: $space;
+}
+@mixin LetterSpace($space:normal){
+    letter-spacing: $space;
+}
+
+
+/*
+  弹性布局
+*/
+//$align 侧轴对齐默 认center,可选stretch
+//$flex 元素排列方式,默认row水平方向,可选column垂直方向
+@mixin Flexbox($align:center,$flex:row){
+  display: flex;justify-content:space-around;align-items:$align;flex-flow: $flex nowrap;
+}
+//子元素属性
+//$basis 根据内容调整占用空间,默认auto可选0
+@mixin Flex($basis:auto){
+  flex: 1 1 $basis;
+}
+
+
+
+//行内块级居中显示
+%dib_vm{display:inline-block;vertical-align: middle;}
+@mixin DibVm(){display:inline-block;vertical-align: middle;}
+//一行文字多余的显示成省略号
+%te_oh_wn { text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+@mixin TeOhWn(){text-overflow: ellipsis; overflow: hidden; white-space: nowrap;}
+/*	clear	*/
+%clear_fix:after{content:".";display:block;height:0;line-height:0;clear:both;visibility:hidden;font-size:0;}
+@mixin ClearFix(){
+  &:after{content:".";display:block;height:0;line-height:0;clear:both;visibility:hidden;font-size:0;}
+}
+
+
+/*
+  CSS box-sizing
+  @param $param
+    content-box，border和padding不计算入width之内   默认值
+    border-box，border和padding计算入width之内
+    inherit，继承父元素
+ */
+ @mixin BoxSizing($param:border-box){
+  box-sizing: $param;
+}
+
+
+/*
+  CSS background-clip
+  @param border-box 背景被裁剪到边框盒。
+  @param padding-box 背景被裁剪到内边距框。
+  @param content-box 背景被裁剪到内容框。
+  @default padding-box
+ */
+ @mixin BgClip($param:padding-box){
+  background-clip: $param;
+}
+
+//单行文字文字超出省略号显示
+@mixin Ellipsis($w:auto){
+  width: $w;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+/*
+  多行单行文字文字超出省略号显示
+  @param $line 显示几行文字
+  @default 1
+*/
+@mixin EllipsisLn($line:1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}
+
+@mixin inline_block($alignment: middle,$support-for-ie:true) {
+  display: inline-block;
+  @if $alignment and $alignment != none {
+    vertical-align: $alignment;
+  }
+  @if $support-for-ie {
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+  }
+}

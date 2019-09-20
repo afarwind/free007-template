@@ -1,0 +1,36 @@
+
+@charset "UTF-8";
+
+:root{-webkit-text-size-adjust: 100%;}/*10 ÷ 16 × 100% = 62.5%*/
+body{font: 14px "PingFang SC","Hiragino Sans GB","Microsoft YaHei","sans-serif";
+    margin:0 auto; padding:0; color: #333;
+}
+// body{font: 14px 'Helvetica','sans-serif','STHeiti', 'Microsoft YaHei', 'Helvetica', 'Arial', 'sans-serif';
+//     margin:0 auto;padding:0;color: #333;
+// }
+
+nav,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,select,textarea,th,td,span {margin:0;padding:0;}
+body, p, input, h1, h2, h3, h4, h5, h6, ul, li, dl, dt, dd, form{list-style:none; vertical-align:middle; display: block;}
+ul,p,fieldset{margin:0;padding:0;border:0;}
+ul,ol,li {list-style:none;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+
+i,address,cite,dfn,em,var,b{font-style: normal;font-weight: normal;}
+code,kbd,pre,samp {font-family:courier new,courier,monospace;}
+
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+legend {color:#000;}
+fieldset,img {border:0;}
+button,input,select,textarea {font-size:100%;outline:none;}
+table {border-collapse:collapse;border-spacing:0;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,summary,time,mark,audio,video {display:block;margin:0;padding:0;}
+mark {background:#ff0;}
+object,embed {outline:0;}
+
+img,svg {vertical-align:top;max-width: 100%;}
+
+a{text-decoration:none;color:inherit;}
+a,a:visited{text-decoration:none;}
+input::-webkit-input-placeholder{color: #cecece;font-weight: normal;font-family: "PingFangSC-Light","STHeiti","Microsoft YaHei","Helvetica","Arial","sans-serif";}
