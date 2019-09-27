@@ -2,11 +2,13 @@
   <a href="https://travis-ci.org/afarwind/free007-template">
     <img src="https://travis-ci.org/afarwind/free007-template.svg?branch=master">
   </a>
+  <a href="">
+    <img src="https://img.shields.io/github/v/tag/afarwind/free007-template">
+  </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+    <img src="https://img.shields.io/github/license/afarwind/free007-template">
   </a>
 </p>
-
 # 自用 webpack+vue 项目模板
 
 > 基于 nodejs 开发的前端项目，依赖 nodejs 开发环境
