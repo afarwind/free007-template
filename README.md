@@ -1,13 +1,21 @@
+<p align="center">
+  <a href="https://travis-ci.org/afarwind/free007-template">
+    <img src="https://travis-ci.org/afarwind/free007-template.svg?branch=master">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  </a>
+</p>
 
-# 自用webpack+vue项目模板
+# 自用 webpack+vue 项目模板
 
-> 基于nodejs开发的前端项目，依赖nodejs开发环境
+> 基于 nodejs 开发的前端项目，依赖 nodejs 开发环境
 
 #### 编译过程
 
 1. 使用 npm
 
-``` bash
+```bash
 
 # install dependencies
 npm install
@@ -21,9 +29,9 @@ npm run build
 
 ```
 
-2.使用yarn（推荐，需自行安装yarn）
+2.使用 yarn（推荐，需自行安装 yarn）
 
-``` bash
+```bash
 
 # install dependencies
 yarn install
