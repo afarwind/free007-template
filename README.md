@@ -1,16 +1,21 @@
 <p align="center">
+<img src="https://i.loli.net/2019/09/27/WOoaJMmFqhzbsyX.png" alt="webpack+vue" width="600">
+</p>
+<h1 align="center">自用 webpack+vue 项目模板</h1>
+
+
+<p align="center">
   <a href="https://travis-ci.org/afarwind/free007-template">
     <img src="https://travis-ci.org/afarwind/free007-template.svg?branch=master">
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/v/tag/afarwind/free007-template">
+    <img src="https://img.shields.io/github/v/tag/afarwind/free007-template?style=flat-square">
   </a>
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/afarwind/free007-template">
+    <img src="https://img.shields.io/github/license/afarwind/free007-template?style=flat-square">
   </a>
 </p>
 
-# 自用 webpack+vue 项目模板
 
 > 基于 nodejs 开发的前端项目，依赖 nodejs 开发环境
 
